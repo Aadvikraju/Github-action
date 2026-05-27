@@ -4,11 +4,24 @@ on:
   workflow_dispatch:
 
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: hello raju
-        run: |
-          echo "hello github action"
-          echo "i am practicing github action"
+        run: echo "hello build"
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: hello raju
+        run: echo "hello test"
+        
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: hello raju
+        run: echo "hello deploy"            
+        
